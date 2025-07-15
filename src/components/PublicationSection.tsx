@@ -3,7 +3,7 @@ const PublicationSection = () => {
     <section id="publication" className="py-20 max-w-7xl mx-auto px-6">
       <div className="text-center mb-16 fade-in">
         <div className="flex items-center justify-center mb-4">
-          <div className="w-2 h-2 bg-purple-primary rounded-full mr-3"></div>
+          <div className="w-2 h-2 bg-purple-primary rounded-full mr-3 pulse-circle"></div>
           <span className="text-sm text-text-secondary uppercase tracking-wider">Publication</span>
         </div>
         <h2 className="text-5xl font-bold text-foreground mb-6">
@@ -34,13 +34,24 @@ const PublicationSection = () => {
                 ))}
               </div>
               
-              <a 
-                href="#" 
-                className="inline-flex items-center text-purple-primary purple-underline font-medium"
-              >
-                Read Publication
-                <span className="ml-2">→</span>
-              </a>
+              <div className="flex gap-4">
+                <a 
+                  href="/research" 
+                  className="inline-flex items-center text-purple-primary purple-underline font-medium"
+                >
+                  Read Publication
+                  <span className="ml-2">→</span>
+                </a>
+                <a 
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Yl4xUmoAAAAJ&citation_for_view=Yl4xUmoAAAAJ:u5HHmVD_uO8C" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-purple-primary purple-underline font-medium"
+                >
+                  Google Scholar
+                  <span className="ml-2">↗</span>
+                </a>
+              </div>
             </div>
             
             {/* Stats */}

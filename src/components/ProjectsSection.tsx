@@ -7,39 +7,39 @@ const ProjectsSection = () => {
   
   const projects = [
     {
-      title: "E-commerce Analytics Platform",
-      description: "Built a comprehensive analytics dashboard that increased user retention by 40%",
-      tags: ["Product Strategy", "Data Analytics", "User Research"],
-      image: "🛒",
-      year: "2023"
+      title: "Decentralized Journalism Platform (0xFethr)",
+      description: "Led end-to-end product discovery for a blockchain-based journalism platform",
+      tags: ["Blockchain", "Product Discovery", "User Research"],
+      image: "📰",
+      year: "2024"
     },
     {
-      title: "Mobile Banking App",
-      description: "Led the design and development of a secure mobile banking solution",
-      tags: ["Fintech", "Mobile UX", "Security"],
-      image: "💳",
-      year: "2023"
+      title: "Battery Swapping Protocol (ChargeSwap)",
+      description: "ETHGlobal Finalist - Top 12 out of 461 projects for EV battery-swapping protocol",
+      tags: ["Blockchain", "Product Strategy", "EV Tech"],
+      image: "🔋",
+      year: "2024"
     },
     {
-      title: "AI-Powered Recruitment Tool",
-      description: "Developed an ML-driven platform that reduced hiring time by 60%",
-      tags: ["AI/ML", "Automation", "HR Tech"],
+      title: "AI Drug Discovery Platform (CovalN)",
+      description: "Led UX strategy and frontend development for pharmaceutical R&D tools",
+      tags: ["AI/ML", "UX Design", "Healthcare"],
+      image: "🧬",
+      year: "2024"
+    },
+    {
+      title: "Serverless AI Assistant",
+      description: "Built end-to-end AI assistant using AWS Bedrock, reducing costs by 50%",
+      tags: ["AI/ML", "AWS", "Serverless"],
       image: "🤖",
-      year: "2022"
+      year: "2025"
     },
     {
-      title: "SaaS Project Management",
-      description: "Created a collaborative workspace that improved team productivity",
-      tags: ["SaaS", "Collaboration", "Productivity"],
-      image: "📊",
-      year: "2022"
-    },
-    {
-      title: "Healthcare Data Platform",
-      description: "Built HIPAA-compliant platform for medical data management",
-      tags: ["Healthcare", "Data Security", "Compliance"],
-      image: "🏥",
-      year: "2021"
+      title: "LLM Code Documentation Research",
+      description: "Co-authored ACM research paper with 30+ citations, 550+ downloads",
+      tags: ["Research", "AI/ML", "Academic"],
+      image: "📄",
+      year: "2024"
     }
   ];
 
@@ -56,20 +56,21 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 max-w-7xl mx-auto px-6">
-      <div className="text-center mb-16 fade-in">
-        <div className="flex items-center justify-center mb-4">
-          <div className="w-2 h-2 bg-purple-primary rounded-full mr-3"></div>
-          <span className="text-sm text-text-secondary uppercase tracking-wider">Projects</span>
+    <section id="projects" className="py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16 fade-in">
+          <div className="flex items-center justify-center mb-4">
+            <div className="w-2 h-2 bg-purple-primary rounded-full mr-3 pulse-circle"></div>
+            <span className="text-sm text-text-secondary uppercase tracking-wider">Projects</span>
+          </div>
+          <h2 className="text-5xl font-bold text-foreground mb-6">
+            Featured Work
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">
+            A selection of products I've built and managed, showcasing the intersection 
+            of technology, product strategy, and user-centered design.
+          </p>
         </div>
-        <h2 className="text-5xl font-bold text-foreground mb-6">
-          Featured Work
-        </h2>
-        <p className="text-text-secondary max-w-2xl mx-auto">
-          A selection of products I've built and managed, showcasing the intersection 
-          of technology and user-centered design.
-        </p>
-      </div>
       
       {/* Project Carousel */}
       <div className="relative">
@@ -87,7 +88,7 @@ const ProjectsSection = () => {
                 className="w-full px-4 flex-shrink-0"
                 style={{ width: `${100 / projects.length}%` }}
               >
-                <div className="bg-surface-elevated border border-border rounded-2xl p-8 hover:border-purple-primary transition-all duration-300 group cursor-pointer h-80">
+                <div className="bg-surface-elevated border border-border rounded-2xl p-8 hover:border-purple-primary transition-all duration-300 group cursor-pointer h-80 hover:scale-105 hover:shadow-lg hover:shadow-purple-primary/10">
                   <div className="flex items-start justify-between mb-6">
                     <div className="text-4xl">{project.image}</div>
                     <span className="text-sm text-text-secondary">{project.year}</span>
@@ -152,15 +153,16 @@ const ProjectsSection = () => {
         </div>
       </div>
       
-      {/* View All Projects Link */}
-      <div className="text-center mt-12">
-        <a 
-          href="/projects" 
-          className="inline-flex items-center text-purple-primary purple-underline font-medium"
-        >
-          View All Projects
-          <span className="ml-2">→</span>
-        </a>
+        {/* View All Projects Link */}
+        <div className="text-center mt-12">
+          <a 
+            href="/projects" 
+            className="inline-flex items-center text-purple-primary purple-underline font-medium hover:scale-105 transition-transform"
+          >
+            View All Projects
+            <span className="ml-2">→</span>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -133,6 +133,16 @@
     z-index: 9999;
     mix-blend-mode: difference;
     transition: transform 0.1s ease;
+    animation: pulse-cursor 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-cursor {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.7);
+    }
   }
   
   /* Smooth scrolling */
@@ -165,6 +175,7 @@
   /* Fade in animation */
   .fade-in {
     animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
   }
   
   @keyframes fadeIn {
@@ -176,6 +187,32 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  
+  /* Pulse animation for circles */
+  .pulse-circle {
+    animation: pulseCircle 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulseCircle {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Glassmorphic background */
+  .glass-bg {
+    background: linear-gradient(135deg, 
+      hsl(var(--background) / 0.1) 0%,
+      hsl(var(--purple-primary) / 0.05) 50%,
+      hsl(var(--background) / 0.1) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.2);
   }
   
   /* Slide animations */

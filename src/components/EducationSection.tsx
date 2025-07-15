@@ -1,28 +1,29 @@
 const EducationSection = () => {
   const education = [
     {
-      institution: "Stanford University, California, USA",
-      period: "2016 - 2018",
-      degree: "Master of Science in Computer Science",
-      description: "Specialized in Human-Computer Interaction and Data Science",
-      tags: ["HCI", "Data Science", "Machine Learning"]
+      institution: "Boston University",
+      period: "Aug 2025 – Dec 2026",
+      degree: "Masters of Science in Business Analytics (Co-op)",
+      description: "Awarded the highly selective Director's Achievement Scholarship ($20,000)",
+      tags: ["Business Analytics", "Data Science", "Machine Learning"]
     },
     {
-      institution: "University of California Berkeley, USA", 
-      period: "2012 - 2016",
-      degree: "Bachelor of Science in Engineering",
-      description: "Major in Computer Science with Minor in Business Administration",
-      tags: ["Computer Science", "Software Engineering", "Business"]
+      institution: "IIIT Delhi", 
+      period: "Dec 2020 – May 2024",
+      degree: "Bachelor of Technology in Computer Science and Design (HCI)",
+      description: "Specialized in Human-Computer Interaction and product design",
+      tags: ["Computer Science", "HCI", "Product Design"]
     }
   ];
 
   return (
-    <section id="education" className="py-20 max-w-7xl mx-auto px-6 bg-surface-elevated">
+    <section id="education" className="py-20 bg-surface-elevated">
+      <div className="max-w-7xl mx-auto px-6">
       <div className="flex justify-between items-start mb-16">
         {/* Left: Section Title */}
         <div className="fade-in">
           <div className="flex items-center mb-4">
-            <div className="w-2 h-2 bg-purple-primary rounded-full mr-3"></div>
+            <div className="w-2 h-2 bg-purple-primary rounded-full mr-3 pulse-circle"></div>
             <span className="text-sm text-text-secondary uppercase tracking-wider">Education</span>
           </div>
           <h2 className="text-5xl font-bold text-foreground">
@@ -79,6 +80,7 @@ const EducationSection = () => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );
