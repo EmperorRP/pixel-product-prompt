@@ -14,10 +14,9 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             {[
-              { name: 'LinkedIn', href: '#' },
-              { name: 'GitHub', href: '#' },
-              { name: 'Twitter', href: '#' },
-              { name: 'Medium', href: '#' }
+              { name: 'LinkedIn', href: 'https://linkedin.com/in/saileelarahulpujari' },
+              { name: 'GitHub', href: 'https://github.com/EmperorRP' },
+              { name: 'Medium', href: 'https://medium.com/@therahulpujari' }
             ].map((social) => (
               <a
                 key={social.name}
@@ -31,7 +30,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t border-border text-center text-text-secondary text-sm">
-          <p>© 2024 Product Manager Portfolio. All rights reserved.</p>
+          <p>© 2025 Rahul Pujari's Personal Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -5,7 +5,7 @@ const EducationSection = () => {
       period: "Aug 2025 – Dec 2026",
       degree: "Masters of Science in Business Analytics (Co-op)",
       description: "Awarded the highly selective Director's Achievement Scholarship ($20,000)",
-      tags: ["Business Analytics", "Data Science", "Machine Learning"]
+      tags: ["Business Analytics", "Data Analytics", "Machine Learning"]
     },
     {
       institution: "IIIT Delhi", 
@@ -17,9 +17,9 @@ const EducationSection = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-surface-elevated">
+    <section id="education" className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
-      <div className="flex justify-between items-start mb-16">
+      <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
         {/* Left: Section Title */}
         <div className="fade-in">
           <div className="flex items-center mb-4">
@@ -33,7 +33,7 @@ const EducationSection = () => {
         </div>
         
         {/* Right: Description */}
-        <div className="max-w-md slide-left">
+        <div className="max-w-md mt-8 slide-left">
           <p className="text-text-secondary leading-relaxed mb-6">
             Strong technical foundation combined with business acumen, 
             providing the perfect blend for product management excellence.

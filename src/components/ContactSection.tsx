@@ -11,12 +11,12 @@ const ContactSection = () => {
           Amazing Together
         </h2>
         <p className="text-text-secondary max-w-2xl mx-auto mb-8">
-          Ready to discuss your next product opportunity? I'm always excited to explore 
+          Ready to discuss your next product? I'm always excited to explore 
           new challenges and collaborate on innovative solutions.
         </p>
       </div>
       
-      <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {/* Email */}
         <div className="text-center fade-in">
           <div className="w-16 h-16 bg-surface-elevated border border-border rounded-full flex items-center justify-center mx-auto mb-4">
@@ -24,10 +24,10 @@ const ContactSection = () => {
           </div>
           <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
           <a 
-            href="mailto:hello@productmanager.dev" 
+            href="mailto:rahulpujari2919@gmail.com" 
             className="text-text-secondary purple-underline hover:text-purple-primary transition-colors"
           >
-            hello@productmanager.dev
+            rahulpujari2919@gmail.com
           </a>
         </div>
         
@@ -38,14 +38,14 @@ const ContactSection = () => {
           </div>
           <h3 className="text-lg font-semibold text-foreground mb-2">LinkedIn</h3>
           <a 
-            href="https://linkedin.com/in/productmanager" 
+            href="https://linkedin.com/in/saileelarahulpujari" 
             className="text-text-secondary purple-underline hover:text-purple-primary transition-colors"
           >
-            /in/productmanager
+            /in/saileelarahulpujari
           </a>
         </div>
         
-        {/* Schedule */}
+        {/* Schedule
         <div className="text-center fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="w-16 h-16 bg-surface-elevated border border-border rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-2xl">📅</span>
@@ -57,13 +57,13 @@ const ContactSection = () => {
           >
             Book a Call
           </a>
-        </div>
+        </div> */}
       </div>
       
       {/* CTA Button */}
       <div className="text-center mt-12">
         <a 
-          href="mailto:hello@productmanager.dev"
+          href="mailto:rahulpujari2919@gmail.com"
           className="inline-flex items-center px-8 py-4 bg-purple-primary text-white rounded-full hover:bg-purple-dark transition-colors font-medium"
         >
           Get in Touch

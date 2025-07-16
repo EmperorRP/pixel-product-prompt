@@ -3,29 +3,28 @@ const SkillsSection = () => {
     {
       title: "Product",
       skills: [
-        "Product Strategy", "User Research", "Market Analysis", "Competitive Intelligence",
-        "Product Roadmapping", "Feature Prioritization", "Stakeholder Management",
-        "Go-to-Market Strategy", "Product Analytics", "User Story Writing"
+        "Product Strategy", "User Research", "Market Analysis", "User Personas",
+        "Product Roadmapping", "Feature Prioritization", "Stakeholder Management", "Product Analytics", "User Story Writing"
       ]
     },
     {
       title: "Data", 
       skills: [
-        "SQL", "Python", "Data Visualization", "A/B Testing", "Statistical Analysis",
-        "Google Analytics", "Mixpanel", "Tableau", "Machine Learning", "Data Pipeline"
+        "SQL", "Python", "Apache Airflow DAGs", "Data Visualization", "Statistical Analysis",
+       "Tableau", "Data Pipeline", "PowerBI"
       ]
     },
     {
       title: "Tools",
       skills: [
-        "Figma", "Sketch", "Jira", "Confluence", "Notion", "Slack", "Linear",
-        "Amplitude", "Hotjar", "Miro", "ProductBoard", "GitHub", "Docker"
+        "Figma", "Notion", "Slack", "Miro", "ProductBoard", "GitHub", "Cursor", "Excel"
       ]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 max-w-7xl mx-auto px-6 bg-surface-elevated">
+    <section id="skills" className="py-20 bg-surface-elevated">
+      <div className=" max-w-7xl mx-auto px-6">
       <div className="text-center mb-16 fade-in">
         <div className="flex items-center justify-center mb-4">
           <div className="w-2 h-2 bg-purple-primary rounded-full mr-3"></div>
@@ -64,6 +63,8 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
+      </div>
+
     </section>
   );
 };
